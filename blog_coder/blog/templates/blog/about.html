@@ -1,0 +1,36 @@
+{% extends 'blog/base.html' %}
+
+{% block header %}
+
+{% load static %}
+
+<header class="masthead" style="background-image: url({% static 'blog/assets/img/about-bg.jpg' %})">
+    <div class="container position-relative px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <div class="page-heading">
+                    <h1>{{title}}</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+{% endblock header %}
+
+{% block main_content %}
+
+<article class="mb-4">
+    <div class="container px-4 px-lg-5">
+        <div class="row gx-4 gx-lg-5 justify-content-center">
+            <div class="col-md-10 col-lg-8 col-xl-7">
+                <p>Mi nombre es Alejo Groppa, nacido en Argentina y viviendo en Buenos Aires, Estudiante de ingenieria en computacion en la Universidad Nacional de 3 de Febrero, desarrollador web para Famiq.</p>
+                <p>Mi primer contacto con la programacion es en el secundario, haciendo programas y proyectos en C++. Luego de un tiempo alejado, volvi al mundo del codigo como desarrollador para la PSA (Policia Seguridad Aeroportuaria)</p>
+                <p>Mis metas son desarrollar una carrera exitosa y aprender mucho.</p>
+
+            </div>
+        </div>
+    </div>
+</article>
+
+{% endblock main_content %}
